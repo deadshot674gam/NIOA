@@ -1,39 +1,25 @@
-from tkinter import ttk 
+import tkinter as tk 
+from tkinter import ttk
+from secondpage import *
+
 
 def main():
-    import tkinter as tk 
-    from tkinter import ttk 
-  
     # Creating tkinter window 
-    window = tk.Tk() 
-    window.title('Nature Inspired Optimization Algorithms') 
-    window.geometry('500x500') 
-  
-    # label text for title 
-    ttk.Label(window, text = "Nature Inspired Optimization Algorithms",  background = 'green', foreground ="white",  font = ("Times New Roman", 15)).grid(row = 0, column = 1) 
-  
-    # label 
-    ttk.Label(window, text = "Select the Month :", font = ("Times New Roman", 10)).grid(column = 0, row = 5, padx = 10, pady = 25) 
-  
-# Combobox creation 
-n = tk.StringVar() 
-monthchoosen = ttk.Combobox(window, width = 27, textvariable = n) 
-  
-# Adding combobox drop down list 
-monthchoosen['values'] = (' January',  
-                          ' February', 
-                          ' March', 
-                          ' April', 
-                          ' May', 
-                          ' June', 
-                          ' July', 
-                          ' August', 
-                          ' September', 
-                          ' October', 
-                          ' November', 
-                          ' December') 
-  
-monthchoosen.grid(column = 1, row = 5) 
-monthchoosen.current() 
-window.mainloop() 
-
+      window = tk.Tk() 
+      window.title('Nature Inspired Optimization Algorithms') 
+      window.geometry('850x500') 
+      main_icon = tk.PhotoImage(file = r'icons/main icon.png')
+      window.iconphoto(False,main_icon)
+      window.config(bg="White")
+      # label text for title 
+      ttk.Label(window, text = "Nature Inspired Optimization Algorithms",  background = 'White', foreground ="#8b0bdb",  font = ("Comic Sans MS", 25)).grid(row = 0,column = 0,columnspan=5,padx =16)
+      NIOA = open(r'overview-txt/NIOA-main.txt','r')
+      ttk.Label(window,text = NIOA.read(),background='White',foreground= 'Black', font = ('Helvetica',8)).grid(row=1,column = 0,columnspan=10,padx=16)
+      ffI = tk.PhotoImage(file = r'icons/firefly_button.png')
+      ttk.Button(window,text = 'Firefly',image = ffI,command=firefly_second).grid(row=3,column=0, pady = 25,padx=40)
+      bees = tk.PhotoImage(file = r'icons/bees_icon.png')
+      ttk.Button(window,text = 'Bees',image = bees,command=Bees_second).grid(row=3,column = 1, pady=25,padx = 40)
+      bat = tk.PhotoImage(file = r'icons/bat_icon.png')
+      ttk.Button(window,text = 'Bat', image = bat).grid(row = 3,column = 2, pady = 25 , padx= 40)    
+      window.mainloop() 
+main()
