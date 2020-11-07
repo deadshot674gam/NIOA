@@ -1,0 +1,4 @@
+Nature-inspired algorithms are a set of novel problem-solving methodologies and approaches and have been attracting considerable attention for their good performance. 
+Representative examples of nature-inspired algorithms include artificial neural networks (ANN), fuzzy systems (FS), evolutionary computing (EC),and swarm intelligence
+(SI), and they have been applied to solve many real-world problems. Despite the popularity of nature-inspired algorithms, many challenges remain which require further
+research efforts.

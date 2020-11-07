@@ -1,0 +1,6 @@
+The firefly algorithm was developed by Xin-She Yang working in Cambridge in 2008 and published in Yang (2009). 
+It adapted the behavior of firefly swarms to develop an algorithm for optimizing functions with multiple optima. 
+In particular it used the concept of how the brightness of individual fireflies drew them together and a randomness 
+factor to encourage exploration of the solution space.The publication of the firefly algorithm has led to many papers
+being published on the analysis and modification of the algorithm and its application to many real world problems and
+there have been many reports of its successful applications.
