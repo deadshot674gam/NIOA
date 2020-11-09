@@ -7,7 +7,7 @@
 3. Choose the function to be optimized. By default Rastrigin is selected.
 4. Minimize value of function with algorithms graph will be printed.
 
-__Note : this Program is still at it developing face, so it may stop responding for a while__
+__Note : this Program is still at it developing phase, so it may stop responding for a while__
 
 ### Gui tools used
 * python tkinter
